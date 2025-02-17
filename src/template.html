@@ -1,0 +1,38 @@
+<main class="app">
+    <header class="header">
+        <div class="header__brand">
+            <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 92 66">
+                <path fill="var(--icon-fill)" stroke="var(--icon-stroke)"
+                    d="M.65 65.5 17.6.5h22.01l5.28 65H.65ZM91.5.5v65H56.64l-4.21-51.83V.5H91.5Z" />
+            </svg>
+            <h1 class="header__title">galleria</h1>
+        </div>
+        <ol class="header__list">
+            <li class="header__list-item">Drag points in first frame to select perspective.</li>
+            <li class="header__list-item"><span>(Optionally)</span> Click and drag in second frame to select export.
+            </li>
+            <li class="header__list-item">Export selection to Figma</li>
+        </ol>
+    </header>
+    <div class="canvases">
+        <div class="view-wrapper">
+            <canvas class="preview"></canvas>
+            <svg class="selection selection--input">
+                <g class="selection__path"></g>
+                <g class="selection__controls"></g>
+            </svg>
+        </div>
+        <div class="view-wrapper">
+            <canvas class="render"></canvas>
+            <svg class="selection selection--output">
+                <g class="selection__path"></g>
+                <!-- <g class="selection__controls"></g> -->
+            </svg>
+        </div>
+    </div>
+    <footer class="footer">
+        <button class="footer__action" data-action="replace">Replace layer with selection</button>
+        <button class="footer__action">Export selection as new layer</button>
+    </footer>
+
+</main>

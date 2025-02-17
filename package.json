@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "plugma dev",
+    "build": "plugma build",
+    "preview": "plugma preview",
+    "release": "plugma release"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10",
+    "@figma/plugin-typings": "^1.100.2",
+    "plugma": "^1.2.8"
+  },
+  "plugma": {
+    "manifest": {
+      "name": "Galleria - Perspective Warp Tool",
+      "id": "1472344805958514303",
+      "documentAccess": "dynamic-page",
+      "main": "src/main.ts",
+      "ui": "src/ui.ts",
+      "editorType": [
+        "figma"
+      ],
+      "networkAccess": {
+        "allowedDomains": [
+          "none"
+        ],
+        "devAllowedDomains": [
+          "http://localhost:*",
+          "ws://localhost:9001"
+        ]
+      }
+    }
+  },
+  "dependencies": {
+    "homography": "^1.8.1"
+  },
+  "patchedDependencies": {
+    "homography@1.8.1": "patches/homography@1.8.1.patch"
+  }
+}

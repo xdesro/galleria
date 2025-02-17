@@ -1,0 +1,16 @@
+diff --git a/Homography.js b/Homography.js
+index 9432a385885762c7aadcefad0aafb2a54f0f0faf..04394b22874237b7a25cc662deaf83a72424c91b 100644
+--- a/Homography.js
++++ b/Homography.js
+@@ -22,9 +22,9 @@
+  */
+ 
+ // In NPM
+-    //import Delaunator from 'delaunator';
++    import Delaunator from 'delaunator';
+ // In JS
+-    import Delaunator from 'https://cdn.skypack.dev/delaunator@5.0.0';
++    // import Delaunator from 'https://cdn.skypack.dev/delaunator@5.0.0';
+ 
+     
+ const availableTransforms = ['auto', 'piecewiseaffine', 'affine', 'projective'];
