@@ -32,7 +32,8 @@
           "ws://localhost:9001"
         ]
       }
-    }
+    },
+    "pluginVersion": "1"
   },
   "dependencies": {
     "homography": "^1.8.1"
